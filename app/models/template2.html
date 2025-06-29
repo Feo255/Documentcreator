@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{zaiavka}} №{{number}} от {{data_}} г.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #222;
+        }
+        .header-row {
+            display: flex;
+            align-items: flex-start; /* выравнивание по верхнему краю */
+            margin-bottom: 24px;
+        }
+        .logo {
+            width: 130px;
+            height: auto;
+            margin-right: 33px;
+            display: block;
+        }
+        .header-info {
+            font-size: 0.7em;
+            line-height: 1.5;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-top: 6px;
+            font-size: 1.1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 22px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 7px 10px;
+            vertical-align: top;
+            font-size: 1em;
+        }
+        .section-title {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.08em;
+        }
+        .section-conditions {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.08em;
+        }
+        .signature {
+            margin-top: 32px;
+        }
+        .requisites th {
+            background: #f0f0f0;
+        }
+        .small-text {
+        font-size: 50%;
+        }
+        .med-text {
+        font-size: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-row">
+        <img src="{{logo_}}" alt="Логотип компании" class="logo">
+        <div class="header-info" align="right">
+            <strong>Контактное лицо:</strong> {{cont_p}}<br>
+            <strong>Тел. офиса:</strong> {{cont_p_tel}}<br>
+            <strong>Email:</strong> {{cont_p_email}}<br>
+        </div>
+    </div>
+
+    <h1></h1>
+    <h2>{{zaiavka}} №{{number}}от {{data_}} г.<br>на перевозку груза автотранспортом</h2>
+
+    <p class="med-text">
+        {{full_z}}, именуемое далее <b>ЗАКАЗЧИК</b>, в лице {{position_z}} {{surname_z}} {{name_z}} {{patronymic_z}}, действующего на основании {{ustav_z}}, с одной стороны,
+        и {{full_p}}, именуемый далее <b>ПЕРЕВОЗЧИК</b>, в лице {{surname_p}} {{name_p}} {{patronymic_p}}, действующего на основании {{ustav_p}}, с другой стороны, вместе также именуемые <b>СТОРОНЫ</b>, заключили настоящий
+        {{zaiavka_2}} о нижеследующем:
+    </p>
+
+    <div class="section-title">1. Условия перевозки</div>
+    <table class="med-text">
+        <tr>
+            <th>Маршрут перевозки</th>
+            {{track}}
+        </tr>
+        {{loading}}
+    </table>
+
+    <div class="section-title">2. Цена и условия оплаты</div>
+    <table class="requisites">
+        <tr class="small-text">
+            <th>Ставка перевозки</th>
+
+        </tr>
+        <td class="small-text"> {{stake}}
+        </td>
+
+    </table>
+
+    <div class="section-title">3. Предоставленный подвижной состав и водитель</div>
+    <table class="med-text">
+        <tr>
+            <th>Водитель</th>
+            <td>{{drivername}}<br>Тел.: {{driverphone}}</td>
+        </tr>
+        <tr>
+            <th>Вод. удостоверение</th>
+            <td>{{driverlicence}}</td>
+        </tr>
+        <tr>
+            <th>Паспорт РФ</th>
+            <td>{{driverpassport}}</td>
+        </tr>
+        <tr>
+            <th>Тягач</th>
+            <td>{{car}}</td>
+        </tr>
+    </table>
+
+    <div class="section-conditions">4. Права и обязанности сторон</div>
+    <ul class="small-text">
+        {{conditions}}
+    </ul>
+
+    <div class="section-title">5. Реквизиты сторон</div>
+    <table class="requisites" style="width: 100%; table-layout: fixed;">
+        <colgroup>
+            <col style="width:50%">
+            <col style="width:50%">
+        </colgroup>
+        <tr>
+            <th>Заказчик</th>
+            <th>Перевозчик</th>
+        </tr>
+        <tr>
+            <td class="med-text">
+                {{short_z}}<br>
+                ОГРН/ИНН/КПП: {{ogrn_z}} / {{INN_Z}} / {{kpp_z}}<br>
+                р/счет: {{RS_Z}}<br>
+                к/с / БИК: {{KS_Z}} / {{BIK_Z}}<br>
+                Юр. адрес: {{full_address_z}}<br>
+                Почт. адрес: {{post_z}}.<br>
+                Контактное лицо: {{cont_z}}<br>
+                {{position_z}}: {{sh_name_z}}<br>
+                <span class="signature">М.П. ___________________</span>
+
+            </td>
+            <td class="med-text" style="position: relative;">
+                {{short_p}}<br>
+                ОГРН/ИНН/КПП: {{ogrn_p}} / {{INN_P}}/ {{kpp_p}}<br>
+                р/счет: {{RS_P}}<br>
+                к/с / БИК: {{KS_P}} / {{BIK_P}}<br>
+                Юр. адрес: {{full_address_p}}<br>
+                Почт. адрес: {{post_p}}<br>
+                Контактное лицо: {{nmae_p}}<br>
+                {{position_p}}: {{sh_name_p}}<br>
+                <span class="signature">М.П. <img src="{{fax}}" alt="_________" style="height:50px; vertical-align: middle;"></span>
+                <img src="{{stamp}}" alt="" style="
+                    position: absolute;
+                    bottom: 0; /* снизу блока */
+                    left: 50%; /* по центру по горизонтали */
+                    transform: translateX(-50%); /* смещение для центрирования */
+                    height: 130px;
+                ">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

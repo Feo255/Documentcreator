@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{zaiavka}} №{{number}} от {{data_}} г.</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #222;
+        }
+        .header-row {
+            display: flex;
+            align-items: flex-start; /* выравнивание по верхнему краю */
+            margin-bottom: 24px;
+        }
+        .logo {
+            width: 130px;
+            height: auto;
+            margin-right: 33px;
+            display: block;
+        }
+        .header-info {
+            font-size: 0.7em;
+            line-height: 1.5;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-top: 6px;
+            font-size: 1.1em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 22px;
+        }
+        th, td {
+            border: 1px solid #333;
+            padding: 7px 10px;
+            vertical-align: top;
+            font-size: 1em;
+        }
+        .section-title {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.08em;
+        }
+        .section-conditions {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 1.08em;
+        }
+        .signature {
+            margin-top: 32px;
+        }
+        .requisites th {
+            background: #f0f0f0;
+        }
+        .small-text {
+        font-size: 50%;
+        }
+        .med-text {
+        font-size: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-row">
+        <img src="{{logo_}}" alt="Логотип компании" class="logo">
+        <div class="header-info" align="right">
+            <strong>Контактное лицо:</strong> Щетинин Дмитрий<br>
+            <strong>Тел. офиса:</strong> +7 (999) 111-22-33<br>
+            <strong>Email:</strong> logist5@sinus-logistic.com<br>
+        </div>
+    </div>
+
+    <h1></h1>
+    <h2>{{zaiavka}} №{{number}}от {{data_}} г.<br>на перевозку груза автотранспортом</h2>
+
+    <p class="med-text">
+        Общество с ограниченной ответственностью "ШАРФИН", именуемое далее <b>ЗАКАЗЧИК</b>, в лице Генерального директора Белоножко Анны Витальевны, действующего на основании Устава, с одной стороны,
+        и Индивидуальный предприниматель Куликов Валерий Васильевич, именуемый далее <b>ПЕРЕВОЗЧИК</b>, в лице Валерия, действующего на основании , с другой стороны, вместе также именуемые <b>СТОРОНЫ</b>, заключили настоящий договор-заявку о нижеследующем:
+    </p>
+
+    <div class="section-title">1. Условия перевозки</div>
+    <table class="med-text">
+        <tr>
+            <th>Маршрут перевозки</th>
+            <td>г. Котельники (Московская обл), Россия — г. Воронеж (Воронежская обл), Россия</td>
+        </tr>
+        <tr>
+            <th>Погрузка</th>
+            <td>
+                <b>Дата:</b> 5 февраля 2025 г., время: с 00:00 по 00:00<br>
+                <b>Адрес:</b> мкр Силикат, 15/10<br>
+                <b>Способ погрузки:</b> Задняя<br>
+                <b>Груз/параметры:</b> Строительные материалы / 20 тонн / 82 м³
+            </td>
+        </tr>
+        <tr>
+            <th>Разгрузка</th>
+            <td>
+                <b>Дата:</b> 7 февраля 2025 г., время: с 09:30 по 09:30<br>
+                <b>Адрес:</b> Воронежская обл., Новоусманский р-н, п. Отрадное, ул. Автодорожная, 11 (Леруа Мерлен)<br>
+                <b>Способ разгрузки:</b> Боковая<br>
+                <b>Груз/параметры:</b> Строительные материалы / 20 тонн / 82 м³
+            </td>
+        </tr>
+    </table>
+
+    <div class="section-title">2. Цена и условия оплаты</div>
+    <table class="requisites">
+        <tr class="small-text">
+            <th>Ставка перевозки</th>
+            <th>Предоплата</th>
+        </tr>
+        <td class="small-text"> 35 000,00 руб. (Тридцать пять тысяч рублей). Безналичный расчет, в т.ч. НДС.<br>
+             Условия оплаты:По оригиналам товаро-сопроводительных и бухгалтерских документов,<br>
+            оригиналу заявки, в течение 10 рабочих дней.
+        </td>
+        <td class="small-text">
+        </td>
+    </table>
+
+    <div class="section-title">3. Предоставленный подвижной состав и водитель</div>
+    <table class="med-text">
+        <tr>
+            <th>Водитель</th>
+            <td>Куликов Валерий Васильевич<br>Тел.: +7 (960) 150-99-99</td>
+        </tr>
+        <tr>
+            <th>Вод. удостоверение</th>
+            <td>Серия: 4830, № 663823, выдано: ГИБДД 4875, дата: 27.01.2018</td>
+        </tr>
+        <tr>
+            <th>Паспорт РФ</th>
+            <td>Серия: 42 16, № 047341, выдан: УФМС России по Липецкой области, дата: 28.05.2017</td>
+        </tr>
+        <tr>
+            <th>Тягач</th>
+            <td>Вольво, гос. номер: О 631 РК (48), прицеп: АМ 8906 (48), тип: тентованный, грузоподъемность: 20 тонн, объем: 82 м³</td>
+        </tr>
+    </table>
+
+    <div class="section-conditions">4. Права и обязанности сторон</div>
+    <ul class="small-text">
+        {{conditions}}
+    </ul>
+
+    <div class="section-title">5. Реквизиты сторон</div>
+    <table class="requisites">
+        <tr>
+            <th>Заказчик</th>
+            <th>Перевозчик</th>
+        </tr>
+        <tr>
+            <td class="med-text" style="position: relative;">
+                ООО "ШАРФИН"<br>
+                ОГРН/ИНН/КПП: 1227700580722 / {{INN_Z}} / 770601001<br>
+                р/счет: {{RS_Z}}<br>
+                к/с / БИК: {{KS_Z}} / {{BIK_Z}}<br>
+                Юр. адрес: 119180, г. Москва, ул. Большая Полянка д.42 стр.1, помещ 4/1<br>
+                Почт. адрес: 125362, г. Москва, а/я 101 для Белоножко А.В.<br>
+                Контактное лицо: Щетинин Дмитрий<br>
+                Генеральный директор: Белоножко А.В.<br>
+                <span class="signature">М.П. <img src="file_2.jpg" alt="Подпись" style="height:50px; vertical-align: middle;"></span>
+                <img src="processed_20250527_144858.png" alt="Наложение" style="
+                    position: absolute;
+                    bottom: 0; /* снизу блока */
+                    left: 50%; /* по центру по горизонтали */
+                    transform: translateX(-50%); /* смещение для центрирования */
+                ">
+            </td>
+            <td class="med-text">
+                ИП Куликов Валерий Васильевич<br>
+                ОГРН/ИНН: 306480736100013 / {{INN_P}}<br>
+                Юр. адрес: 398070, г. Липецк, ул. Осканова, д.2, кв.130<br>
+                Почт. адрес: 398070, г. Липецк, ул. Осканова, д.2, кв.130<br>
+                Контактное лицо: Валерий<br>
+                <span class="signature">М.П. ___________________</span>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
